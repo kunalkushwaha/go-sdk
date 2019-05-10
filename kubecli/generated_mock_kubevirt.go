@@ -8,7 +8,7 @@ import (
 
 	gomock "github.com/golang/mock/gomock"
 	versioned "github.com/k8snetworkplumbingwg/network-attachment-definition-client/pkg/client/clientset/versioned"
-	versioned0 "github.com/kubevirt/containerized-data-importer/pkg/client/clientset/versioned"
+	versioned0 "kubevirt.io/containerized-data-importer/pkg/client/clientset/versioned"
 	v111 "github.com/kunalkushwaha/go-sdk/api/v1"
 	v1 "github.com/openshift/client-go/security/clientset/versioned/typed/security/v1"
 	v10 "k8s.io/api/autoscaling/v1"

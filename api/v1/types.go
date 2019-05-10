@@ -32,7 +32,7 @@ import (
 	"encoding/json"
 	"fmt"
 
-	cdiv1 "github.com/kubevirt/containerized-data-importer/pkg/apis/core/v1alpha1"
+	cdiv1 "kubevirt.io/containerized-data-importer/pkg/apis/core/v1alpha1"
 	"github.com/kunalkushwaha/go-sdk/precond"
 	v1 "k8s.io/api/autoscaling/v1"
 	k8sv1 "k8s.io/api/core/v1"

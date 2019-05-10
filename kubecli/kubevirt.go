@@ -30,7 +30,7 @@ import (
 	"time"
 
 	networkclient "github.com/k8snetworkplumbingwg/network-attachment-definition-client/pkg/client/clientset/versioned"
-	cdiclient "github.com/kubevirt/containerized-data-importer/pkg/client/clientset/versioned"
+	cdiclient "kubevirt.io/containerized-data-importer/pkg/client/clientset/versioned"
 	v1 "github.com/kunalkushwaha/go-sdk/api/v1"
 	secv1 "github.com/openshift/client-go/security/clientset/versioned/typed/security/v1"
 	autov1 "k8s.io/api/autoscaling/v1"

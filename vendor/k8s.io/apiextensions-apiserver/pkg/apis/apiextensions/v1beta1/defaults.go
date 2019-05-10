@@ -19,9 +19,11 @@ package v1beta1
 import (
 	"strings"
 
+	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	"k8s.io/apimachinery/pkg/runtime"
-	utilpointer "k8s.io/utils/pointer"
 )
+
+var swaggerMetadataDescriptions = metav1.ObjectMeta{}.SwaggerDoc()
 
 func addDefaultingFuncs(scheme *runtime.Scheme) error {
 	scheme.AddTypeDefaultingFunc(&CustomResourceDefinition{}, func(obj interface{}) { SetDefaults_CustomResourceDefinition(obj.(*CustomResourceDefinition)) })
@@ -64,19 +66,9 @@ func SetDefaults_CustomResourceDefinitionSpec(obj *CustomResourceDefinitionSpec)
 	if len(obj.Version) == 0 && len(obj.Versions) != 0 {
 		obj.Version = obj.Versions[0].Name
 	}
-	if obj.Conversion == nil {
-		obj.Conversion = &CustomResourceConversion{
-			Strategy: NoneConverter,
+	if len(obj.AdditionalPrinterColumns) == 0 {
+		obj.AdditionalPrinterColumns = []CustomResourceColumnDefinition{
+			{Name: "Age", Type: "date", Description: swaggerMetadataDescriptions["creationTimestamp"], JSONPath: ".metadata.creationTimestamp"},
 		}
-	}
-	if obj.Conversion.Strategy == WebhookConverter && len(obj.Conversion.ConversionReviewVersions) == 0 {
-		obj.Conversion.ConversionReviewVersions = []string{SchemeGroupVersion.Version}
-	}
-}
-
-// SetDefaults_ServiceReference sets defaults for Webhook's ServiceReference
-func SetDefaults_ServiceReference(obj *ServiceReference) {
-	if obj.Port == nil {
-		obj.Port = utilpointer.Int32Ptr(443)
 	}
 }

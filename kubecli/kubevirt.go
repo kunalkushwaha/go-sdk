@@ -29,6 +29,9 @@ import (
 	"io"
 	"time"
 
+	networkclient "github.com/k8snetworkplumbingwg/network-attachment-definition-client/pkg/client/clientset/versioned"
+	cdiclient "github.com/kubevirt/containerized-data-importer/pkg/client/clientset/versioned"
+	v1 "github.com/kunalkushwaha/go-sdk/api/v1"
 	secv1 "github.com/openshift/client-go/security/clientset/versioned/typed/security/v1"
 	autov1 "k8s.io/api/autoscaling/v1"
 	extclient "k8s.io/apiextensions-apiserver/pkg/client/clientset/clientset"
@@ -37,11 +40,6 @@ import (
 	"k8s.io/client-go/discovery"
 	"k8s.io/client-go/kubernetes"
 	"k8s.io/client-go/rest"
-
-	networkclient "github.com/k8snetworkplumbingwg/network-attachment-definition-client/pkg/client/clientset/versioned"
-
-	cdiclient "kubevirt.io/containerized-data-importer/pkg/client/clientset/versioned"
-	v1 "kubevirt.io/kubevirt/pkg/api/v1"
 )
 
 type KubevirtClient interface {

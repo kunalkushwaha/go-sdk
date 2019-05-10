@@ -25,6 +25,9 @@ import (
 	"os"
 	"sync"
 
+	networkclient "github.com/k8snetworkplumbingwg/network-attachment-definition-client/pkg/client/clientset/versioned"
+	cdiclient "github.com/kubevirt/containerized-data-importer/pkg/client/clientset/versioned"
+	v1 "github.com/kunalkushwaha/go-sdk/api/v1"
 	secv1 "github.com/openshift/client-go/security/clientset/versioned/typed/security/v1"
 	"github.com/spf13/pflag"
 	extclient "k8s.io/apiextensions-apiserver/pkg/client/clientset/clientset"
@@ -36,11 +39,6 @@ import (
 	"k8s.io/client-go/rest"
 	restclient "k8s.io/client-go/rest"
 	"k8s.io/client-go/tools/clientcmd"
-
-	networkclient "github.com/k8snetworkplumbingwg/network-attachment-definition-client/pkg/client/clientset/versioned"
-
-	cdiclient "kubevirt.io/containerized-data-importer/pkg/client/clientset/versioned"
-	v1 "kubevirt.io/kubevirt/pkg/api/v1"
 )
 
 var (

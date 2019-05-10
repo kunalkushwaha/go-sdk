@@ -13,7 +13,7 @@ go_library(
         "types_swagger_generated.go",
         "zz_generated.defaults.go",
     ],
-    importpath = "kubevirt.io/kubevirt/pkg/api/v1",
+    importpath = "github.com/kunalkushwaha/go-sdk/api/v1",
     visibility = ["//visibility:public"],
     deps = [
         "//pkg/precond:go_default_library",

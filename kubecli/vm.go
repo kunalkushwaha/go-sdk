@@ -27,7 +27,7 @@ import (
 	"k8s.io/client-go/kubernetes/scheme"
 	"k8s.io/client-go/rest"
 
-	v1 "kubevirt.io/kubevirt/pkg/api/v1"
+	v1 "github.com/kunalkushwaha/go-sdk/api/v1"
 )
 
 const vmSubresourceURL = "/apis/subresources.kubevirt.io/v1alpha3/namespaces/%s/virtualmachines/%s/%s"

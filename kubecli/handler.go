@@ -4,12 +4,11 @@ import (
 	"fmt"
 	"net/url"
 
+	virtv1 "github.com/kunalkushwaha/go-sdk/api/v1"
 	v1 "k8s.io/api/core/v1"
 	k8smetav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	"k8s.io/apimachinery/pkg/fields"
 	"k8s.io/apimachinery/pkg/labels"
-
-	virtv1 "kubevirt.io/kubevirt/pkg/api/v1"
 )
 
 func NewVirtHandlerClient(client KubevirtClient) VirtHandlerClient {

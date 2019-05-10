@@ -25,12 +25,11 @@ import (
 	"runtime"
 	"time"
 
+	"github.com/kunalkushwaha/go-sdk/version"
 	. "github.com/onsi/ginkgo"
 	. "github.com/onsi/gomega"
 	"github.com/onsi/gomega/ghttp"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
-
-	"kubevirt.io/kubevirt/pkg/version"
 )
 
 var _ = Describe("Kubevirt Version Client", func() {

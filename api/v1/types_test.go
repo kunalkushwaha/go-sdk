@@ -22,13 +22,12 @@ package v1
 import (
 	"testing"
 
+	"github.com/kunalkushwaha/go-sdk/log"
 	. "github.com/onsi/ginkgo"
 	"github.com/onsi/ginkgo/extensions/table"
 	. "github.com/onsi/gomega"
 	v1 "k8s.io/api/core/v1"
 	k8smetav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
-
-	"kubevirt.io/kubevirt/pkg/log"
 )
 
 var _ = Describe("PodSelectors", func() {

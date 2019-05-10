@@ -23,10 +23,9 @@ import (
 	"io/ioutil"
 	"testing"
 
+	"github.com/kunalkushwaha/go-sdk/log"
 	. "github.com/onsi/ginkgo"
 	. "github.com/onsi/gomega"
-
-	"kubevirt.io/kubevirt/pkg/log"
 )
 
 func TestV1(t *testing.T) {

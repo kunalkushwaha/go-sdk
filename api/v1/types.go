@@ -32,6 +32,7 @@ import (
 	"encoding/json"
 	"fmt"
 
+	cdiv1 "github.com/kubevirt/containerized-data-importer/pkg/apis/core/v1alpha1"
 	"github.com/kunalkushwaha/go-sdk/precond"
 	v1 "k8s.io/api/autoscaling/v1"
 	k8sv1 "k8s.io/api/core/v1"
@@ -42,7 +43,6 @@ import (
 	"k8s.io/apimachinery/pkg/runtime/serializer"
 	"k8s.io/apimachinery/pkg/types"
 	"k8s.io/client-go/kubernetes/scheme"
-	cdiv1 "kubevirt.io/containerized-data-importer/pkg/apis/core/v1alpha1"
 )
 
 // GroupName is the group name use in this package

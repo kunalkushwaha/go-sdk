@@ -22,10 +22,9 @@ package kubecli_test
 import (
 	"testing"
 
+	"github.com/kunalkushwaha/go-sdk/log"
 	. "github.com/onsi/ginkgo"
 	. "github.com/onsi/gomega"
-
-	"kubevirt.io/kubevirt/pkg/log"
 )
 
 func TestKubecli(t *testing.T) {

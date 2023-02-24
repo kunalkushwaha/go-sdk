@@ -30,7 +30,7 @@ require (
 	gopkg.in/inf.v0 v0.9.1 // indirect
 	k8s.io/api v0.0.0-20181128191700-6db15a15d2d3 //kubernetes-1.12.4
 	k8s.io/apiextensions-apiserver v0.0.0-20181217193801-853f76028711 //kubernetes-1.12.4
-	k8s.io/apimachinery v0.0.0-20181128191346-49ce2735e507 //kubernetes-1.12.4
+	k8s.io/apimachinery v0.15.7 //kubernetes-1.12.4
 	k8s.io/client-go v0.0.0-20181205110444-5e6a3d4e34f6 //kubernetes-1.12.4
 	k8s.io/kube-openapi v0.0.0-20190510232812-a01b7d5d6c22
 	kubevirt.io/containerized-data-importer v1.8.0

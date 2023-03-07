@@ -13,7 +13,7 @@ require (
 	github.com/golang/mock v1.3.1
 	github.com/google/btree v1.0.0 // indirect
 	github.com/google/gofuzz v1.0.0
-	github.com/gorilla/websocket v1.4.0
+	github.com/gorilla/websocket v1.4.1
 	github.com/gregjones/httpcache v0.0.0-20190212212710-3befbb6ad0cc // indirect
 	github.com/hashicorp/golang-lru v0.5.1 // indirect
 	github.com/imdario/mergo v0.3.7 // indirect
